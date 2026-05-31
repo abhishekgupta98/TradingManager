@@ -1,0 +1,23 @@
+# Visual Studio cache/option directory
+.vs/
+
+# Build results
+bin/
+obj/
+*.dll
+*.exe
+
+# User-specific files
+*.user
+*.suo
+
+# Packages
+.nuget/
+
+# IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
