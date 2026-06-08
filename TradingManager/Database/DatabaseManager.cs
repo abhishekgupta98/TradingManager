@@ -8,13 +8,18 @@ namespace TradingManager.Database
     public class DatabaseManager
     {
         // Database file path
-        private string dbPath = "tradingmanager.db";
+//        private string dbPath = "tradingmanager.db";
+  
+        private string dbPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "tradingmanager.db");
         private string connectionString;
 
         public DatabaseManager()
         {
             // Create connection string
-            connectionString = $"Data Source={dbPath};";
+        
+        //private string dbPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "tradingmanager.db");
+
+        connectionString = $"Data Source={dbPath};";
         }
 
         // Method to initialize database (create tables)
